@@ -1,0 +1,17 @@
+<section class="w-full mt-8 py-8">
+    <h3 class="text-center text-4xl font-bold text-[#FFD700]">Pokedex</h3>
+    <div class="flex justify-center my-8">
+        <div class="w-[90%] flex justify-center flex-wrap">
+            <div routerLink="/pokedex-dtl/{{pokemon.name}}" *ngFor="let pokemon of pokemonList.results" routerLink="/product-detail" class="min-w-[300px] max-w-[600px] h-fit my-6 hover:my-2 m-4 cursor-pointer hover:shadow-lg grow item-card">
+                <div class="bg-white hover:bg-slate-300 rounded-lg border-2 hover:border-black">
+                    <div class="overflow-hidden relative p-3 pb-0">
+                        <img class="w-full h-[300px] rounded-lg" src="../../../assets/images/bulbasur.png" alt="">
+                    </div>
+                    <div class="flex justify-between items-center p-3 rounded-bl-md rounded-br-md bg-[#FFD700]">
+                        <span class="text-black text-2xl font-semibold">{{pokemonName(pokemon.name)}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

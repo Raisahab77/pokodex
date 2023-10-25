@@ -1,0 +1,40 @@
+<div class="w-full flex justify-center bg-neutral-700 p-4">
+    <div class="w-4/5 ">
+        <button routerLink="/" class="px-6 py-2 border-2 border-[#FFD700] rounded-sm text-[#FFD700] hover:bg-[#FFD700] hover:text-white text-xl font-bold"><i class="fa-solid fa-square-caret-left"></i>  Back</button>
+    </div>
+</div>
+<section class="bg-slate-100 flex justify-center w-full h-full overflow-hidden">    
+    <div class="w-4/5 h-full bg-white py-10">
+        <h3 class="text-center text-4xl font-bold text-[#FFD700]">{{pokemonName(pokemonDtl.name)}}</h3>
+        <div class="w-full h-full flex justify-center mt-8 p-5">
+            <div class="w-1/2 h-[400px] flex justify-center items-center">
+                <img class="h-full" src="../../../assets/images/bulbasur.png" alt="">
+            </div>
+            <div class="w-1/2 h-full">
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias assumenda quia fugiat reiciendis necessitatibus inventore eum officiis a ea, nam recusandae. Unde nihil possimus ab ipsum obcaecati? Provident dolores quis eveniet expedita aliquid vel animi.
+                </div>
+
+                <div class="bg-[#FFD700] rounded-md h-[300px] py-10 px-16 flex justify-between mt-6">
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <span class="text-lg text-bold">Height</span><br>
+                            <span class="text-white text-xl font-extrabold">{{pokemonDtl.height}}</span>
+                        </div>
+                        <div>
+                            <span class="text-lg text-bold">Weight</span><br>
+                            <span class="text-white text-xl font-extrabold">{{pokemonDtl.weight}}lbs</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <span class="text-lg text-bold">Abilities</span><br>
+                            <span class="text-white text-xl font-extrabold">{{pokemonDtl.abilities[0].ability.name}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
